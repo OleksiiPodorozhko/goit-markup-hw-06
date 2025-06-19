@@ -17,7 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header class="header">
@@ -48,12 +48,17 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-btn-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
     <main>
       <!--#region Hero section-->
-      <section class="hero section">
+      <section class="hero section hidden">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-btn main-btn" type="button" data-modal-open>
@@ -63,7 +68,7 @@
       </section>
       <!--#endregion-->
       <!--#region Features section-->
-      <section class="section">
+      <section class="section hidden">
         <div class="container">
           <h2 class="visually-hidden">Features</h2>
           <ul class="feature-list">
@@ -120,7 +125,7 @@
       </section>
       <!--#endregion-->
       <!--#region Our Team-->
-      <section class="our-team section">
+      <section class="our-team section hidden">
         <div class="container">
           <h2 class="our-team-title">Our Team</h2>
           <ul class="our-team-list">
@@ -313,7 +318,7 @@
       </section>
       <!--#endregion-->
       <!--#region Our Portfolio-->
-      <section class="our-portfolio section">
+      <section class="our-portfolio section hidden">
         <div class="container">
           <h2 class="our-portfolio-title">Our Portfolio</h2>
           <ul class="our-portfolio-list">
@@ -321,7 +326,7 @@
               <div class="portfolio-img-container">
                 <picture>
                   <source
-                    media="(min-width: 1440px)"
+                    media="(min-width: 1158px)"
                     srcset="
                       ./images/portfolio/portfolio-1-desk@2x-min.jpg 2x,
                       ./images/portfolio/portfolio-1-desk-min.jpg    1x
@@ -342,10 +347,6 @@
                     "
                   />
                   <img
-                    srcset="
-                      ./images/portfolio/portfolio-1-desk@2x-min.jpg 2x,
-                      ./images/portfolio/portfolio-1-desk-min.jpg    1x
-                    "
                     src="./images/portfolio/portfolio-1-desk-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -366,7 +367,7 @@
               <div class="portfolio-img-container">
                 <picture>
                   <source
-                    media="(min-width: 1440px)"
+                    media="(min-width: 1158px)"
                     srcset="
                       ./images/portfolio/portfolio-2-desk@2x-min.jpg 2x,
                       ./images/portfolio/portfolio-2-desk-min.jpg    1x
@@ -387,10 +388,6 @@
                     "
                   />
                   <img
-                    srcset="
-                      ./images/portfolio/portfolio-2-desk@2x-min.jpg 2x,
-                      ./images/portfolio/portfolio-2-desk-min.jpg    1x
-                    "
                     src="./images/portfolio/portfolio-2-desk-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -411,7 +408,7 @@
               <div class="portfolio-img-container">
                 <picture>
                   <source
-                    media="(min-width: 1440px)"
+                    media="(min-width: 1158px)"
                     srcset="
                       ./images/portfolio/portfolio-3-desk@2x-min.jpg 2x,
                       ./images/portfolio/portfolio-3-desk-min.jpg    1x
@@ -432,10 +429,6 @@
                     "
                   />
                   <img
-                    srcset="
-                      ./images/portfolio/portfolio-3-desk@2x-min.jpg 2x,
-                      ./images/portfolio/portfolio-3-desk-min.jpg    1x
-                    "
                     src="./images/portfolio/portfolio-3-desk-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -456,7 +449,7 @@
               <div class="portfolio-img-container">
                 <picture>
                   <source
-                    media="(min-width: 1440px)"
+                    media="(min-width: 1158px)"
                     srcset="
                       ./images/portfolio/portfolio-4-desk@2x-min.jpg 2x,
                       ./images/portfolio/portfolio-4-desk-min.jpg    1x
@@ -477,10 +470,6 @@
                     "
                   />
                   <img
-                    srcset="
-                      ./images/portfolio/portfolio-4-desk@2x-min.jpg 2x,
-                      ./images/portfolio/portfolio-4-desk-min.jpg    1x
-                    "
                     src="./images/portfolio/portfolio-4-desk-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -501,7 +490,7 @@
               <div class="portfolio-img-container">
                 <picture>
                   <source
-                    media="(min-width: 1440px)"
+                    media="(min-width: 1158px)"
                     srcset="
                       ./images/portfolio/portfolio-5-desk@2x-min.jpg 2x,
                       ./images/portfolio/portfolio-5-desk-min.jpg    1x
@@ -522,10 +511,6 @@
                     "
                   />
                   <img
-                    srcset="
-                      ./images/portfolio/portfolio-5-desk@2x-min.jpg 2x,
-                      ./images/portfolio/portfolio-5-desk-min.jpg    1x
-                    "
                     src="./images/portfolio/portfolio-5-desk-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -546,7 +531,7 @@
               <div class="portfolio-img-container">
                 <picture>
                   <source
-                    media="(min-width: 1440px)"
+                    media="(min-width: 1158px)"
                     srcset="
                       ./images/portfolio/portfolio-6-desk@2x-min.jpg 2x,
                       ./images/portfolio/portfolio-6-desk-min.jpg    1x
@@ -567,10 +552,6 @@
                     "
                   />
                   <img
-                    srcset="
-                      ./images/portfolio/portfolio-6-desk@2x-min.jpg 2x,
-                      ./images/portfolio/portfolio-6-desk-min.jpg    1x
-                    "
                     src="./images/portfolio/portfolio-6-desk-min.jpg"
                     alt="Banking App"
                     width="360"
@@ -592,7 +573,7 @@
       </section>
       <!--#endregion-->
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <div class="container">
         <div class="footer-block">
           <a href="./index.html" class="footer-logo"
