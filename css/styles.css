@@ -650,6 +650,36 @@ p {
 .team-social-icon {
   fill: #f4f4fd;
 }
+
+@media screen and (min-width: 768px) {
+  .our-team .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+
+  .our-team-list {
+    gap: 64px 24px;
+  }
+
+  .team-member-card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .our-team .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .our-team-list {
+    gap: 24px;
+  }
+
+  .team-member-card {
+    width: calc((100% - 72px) / 4);
+  }
+}
 /*#endregion*/
 
 /*TODO*/
