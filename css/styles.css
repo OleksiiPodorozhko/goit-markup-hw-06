@@ -374,27 +374,19 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 2x)  {
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
   .hero {
     background-image:
-            linear-gradient(
-                    to bottom,
-                    rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)
-            ),
-            url('../images/hero/hero-tab@2x-min.jpg');
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero/hero-tab@2x-min.jpg');
   }
 }
 
 @media screen and (min-width: 1158px) and (min-resolution: 2x) {
   .hero {
     background-image:
-            linear-gradient(
-                    to bottom,
-                    rgba(46, 47, 66, 0.7),
-                    rgba(46, 47, 66, 0.7)
-            ),
-            url('../images/hero/hero-desk@2x-min.jpg');
+      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url('../images/hero/hero-desk@2x-min.jpg');
   }
 }
 
@@ -985,6 +977,14 @@ p {
   .footer-block:last-child {
     margin-left: auto;
     margin-right: 0;
+  }
+
+  .footer-email-input {
+    border: 1px solid #fff;
+  }
+
+  .footer-email-input::placeholder {
+    color: #fff;
   }
 }
 /*#endregion*/
