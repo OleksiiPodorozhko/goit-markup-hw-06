@@ -799,22 +799,17 @@ p {
 /*#region Footer*/
 .footer {
   background-color: #2e2f42;
-
-  /*TODO changed*/
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
 .footer .container {
   display: flex;
-
-  /*TODO remove for tab*/
   flex-direction: column;
   gap: 72px;
 }
 
 .footer-block {
-  /*TODO make block for tablet*/
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -823,7 +818,6 @@ p {
 
 .footer-logo {
   display: inline-block;
-  /*margin-bottom: 16px;*/
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -831,8 +825,6 @@ p {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
-
-  text-align: center;
 }
 
 .footer-logo-colored {
@@ -854,7 +846,6 @@ p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
-  /*margin-bottom: 16px;*/
 }
 
 .footer-social-list {
@@ -884,7 +875,6 @@ p {
 
 .footer-subscribe-form {
   display: flex;
-  /*gap: 24px;*/
   gap: 16px;
   flex-direction: column;
   align-items: center;
@@ -900,7 +890,6 @@ p {
   border: 1px solid #fff;
   border-radius: 4px;
   width: 288px;
-  /*width: 264px;*/
   height: 40px;
   padding-left: 16px;
   padding-right: 16px;
@@ -939,7 +928,6 @@ p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  /*text-align: center;*/
 }
 
 .footer-subscribe-btn:hover,
@@ -960,14 +948,9 @@ p {
   }
 
   .footer .container {
-    /*display: flex;*/
-
-    /*TODO remove for tab*/
     flex-direction: row;
     flex-wrap: wrap;
-
     gap: 72px 24px;
-    /*TODO added for tab*/
     padding-right: 92px;
     padding-left: 92px;
   }
@@ -1012,7 +995,6 @@ p {
 /*#endregion*/
 
 
-/*TODO*/
 /*#region Modal*/
 .backdrop {
   position: fixed;
@@ -1042,12 +1024,9 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 288px;
-  /*width: 408px;*/
   min-height: 623px;
-  /*min-height: 584px;*/
   background-color: #fcfcfc;
   padding: 72px 16px 24px 16px;
-  /*padding: 72px 24px 24px;*/
   border-radius: 4px;
   box-shadow:
     0 1px 1px 0 rgba(0, 0, 0, 0.14),
