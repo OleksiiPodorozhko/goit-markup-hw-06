@@ -374,22 +374,6 @@ p {
   }
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 2x) {
-  .hero {
-    background-image:
-      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/hero/hero-tab@2x-min.jpg');
-  }
-}
-
-@media screen and (min-width: 1158px) and (min-resolution: 2x) {
-  .hero {
-    background-image:
-      linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url('../images/hero/hero-desk@2x-min.jpg');
-  }
-}
-
 .hero .container {
   margin: 0 auto;
   height: 100%;
@@ -452,6 +436,14 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 2x) {
+  .hero {
+    background-image:
+            linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/hero/hero-tab@2x-min.jpg');
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .hero {
     background-image:
@@ -469,6 +461,14 @@ p {
     max-width: 496px;
     margin-bottom: 48px;
     font-size: 56px;
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 2x) {
+  .hero {
+    background-image:
+            linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/hero/hero-desk@2x-min.jpg');
   }
 }
 /*#endregion*/
