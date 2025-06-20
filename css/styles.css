@@ -258,8 +258,6 @@ p {
   flex-direction: column;
   align-items: flex-start;
   height: 100%;
-  /*padding-right: 16px;*/
-  /*padding-left: 16px;*/
 }
 
 .mobile-menu.is-open {
@@ -376,6 +374,30 @@ p {
   }
 }
 
+@media screen and (min-width: 768px) and (min-resolution: 2x)  {
+  .hero {
+    background-image:
+            linear-gradient(
+                    to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)
+            ),
+            url('../images/hero/hero-tab@2x-min.jpg');
+  }
+}
+
+@media screen and (min-width: 1158px) and (min-resolution: 2x) {
+  .hero {
+    background-image:
+            linear-gradient(
+                    to bottom,
+                    rgba(46, 47, 66, 0.7),
+                    rgba(46, 47, 66, 0.7)
+            ),
+            url('../images/hero/hero-desk@2x-min.jpg');
+  }
+}
+
 .hero .container {
   margin: 0 auto;
   height: 100%;
@@ -417,25 +439,12 @@ p {
   background-color: #404bbf;
 }
 
-
 @media screen and (min-width: 768px) {
   .hero {
     background-image:
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero/hero-tab-min.jpg');
     max-width: 768px;
-  }
-
-  @media screen and (min-resolution: 2x) {
-    .hero {
-      background-image:
-        linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url('../images/hero/hero-tab@2x-min.jpg');
-    }
   }
 
   .hero .container {
@@ -457,18 +466,6 @@ p {
       linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url('../images/hero/hero-desk-min.jpg');
     max-width: 1440px;
-  }
-
-  @media screen and (min-resolution: 2x) {
-    .hero {
-      background-image:
-        linear-gradient(
-          to bottom,
-          rgba(46, 47, 66, 0.7),
-          rgba(46, 47, 66, 0.7)
-        ),
-        url('../images/hero/hero-desk@2x-min.jpg');
-    }
   }
 
   .hero .container {
@@ -885,9 +882,9 @@ p {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   color: #fff;
   font-family: inherit;
-  border: 1px solid #fff;
   border-radius: 4px;
   width: 288px;
   height: 40px;
@@ -897,7 +894,6 @@ p {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  opacity: 0.3;
 }
 
 .footer-email-input::placeholder {
@@ -905,7 +901,7 @@ p {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-email-input:focus {
@@ -959,7 +955,6 @@ p {
     align-items: flex-start;
   }
 
-
   .footer-subscribe-form {
     gap: 24px;
     flex-direction: row;
@@ -993,7 +988,6 @@ p {
   }
 }
 /*#endregion*/
-
 
 /*#region Modal*/
 .backdrop {
@@ -1105,10 +1099,6 @@ p {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input-item:focus {
-  border-color: #4d5ae5;
-}
-
 .modal-input-wrapper {
   position: relative;
 }
@@ -1128,23 +1118,24 @@ p {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input-item:focus + .modal-input-icon {
-  fill: #4d5ae5;
-}
-
 textarea.modal-textarea {
   height: 120px;
   padding: 8px 16px;
   resize: none;
-  color: rgba(46, 47, 66, 0.4);
+  color: rgb(46, 47, 66);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   display: block;
 }
 
 .modal-textarea::placeholder {
-  color: rgba(46, 47, 66, 0.4);
+  opacity: 0.5;
+  color: #8e8f99;
 }
 
-.modal-input-text {
+.modal-input-label,
+.modal-field,
+.modal-textarea,
+.modal-checkbox-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1183,6 +1174,7 @@ textarea.modal-textarea {
 .modal-checkbox-label {
   color: #8e8f99;
   display: flex;
+  align-items: center;
 }
 
 .privacy-policy {
@@ -1199,6 +1191,20 @@ textarea.modal-textarea {
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .modal-input-item:focus {
+    border-color: #4d5ae5;
+  }
+
+  .modal-input-item:focus + .modal-input-icon {
+    fill: #4d5ae5;
+  }
+
+  .modal-field {
+    padding-left: 38px;
   }
 }
 /*#endregion*/
