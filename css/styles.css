@@ -412,6 +412,12 @@ p {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+.main-btn:hover,
+.main-btn:focus {
+  background-color: #404bbf;
+}
+
+
 @media screen and (min-width: 768px) {
   .hero {
     background-image:
@@ -793,25 +799,31 @@ p {
 /*#region Footer*/
 .footer {
   background-color: #2e2f42;
+
+  /*TODO changed*/
   padding-top: 96px;
   padding-bottom: 96px;
 }
 
-footer .container {
+.footer .container {
   display: flex;
+
+  /*TODO remove for tab*/
   flex-direction: column;
   gap: 72px;
 }
 
 .footer-block {
+  /*TODO make block for tablet*/
   display: flex;
   flex-direction: column;
   gap: 16px;
-  justify-content: center;
   align-items: center;
 }
 
 .footer-logo {
+  display: inline-block;
+  /*margin-bottom: 16px;*/
   font-weight: 700;
   font-size: 18px;
   line-height: 1.17;
@@ -819,6 +831,8 @@ footer .container {
   text-transform: uppercase;
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
+
+  text-align: center;
 }
 
 .footer-logo-colored {
@@ -840,17 +854,12 @@ footer .container {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
+  /*margin-bottom: 16px;*/
 }
 
 .footer-social-list {
   display: flex;
   gap: 16px;
-  justify-content: center;
-}
-
-.footer-social-item {
-  width: 40px;
-  height: 40px;
 }
 
 .footer-social-link {
@@ -875,9 +884,9 @@ footer .container {
 
 .footer-subscribe-form {
   display: flex;
+  /*gap: 24px;*/
   gap: 16px;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -888,10 +897,10 @@ footer .container {
   letter-spacing: 0.04em;
   color: #fff;
   font-family: inherit;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #fff;
   border-radius: 4px;
-  /*TODO*/
   width: 288px;
+  /*width: 264px;*/
   height: 40px;
   padding-left: 16px;
   padding-right: 16px;
@@ -899,6 +908,7 @@ footer .container {
   outline: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.3;
 }
 
 .footer-email-input::placeholder {
@@ -906,7 +916,6 @@ footer .container {
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.04em;
-  opacity: 0.6;
   color: #fff;
 }
 
@@ -930,7 +939,7 @@ footer .container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .footer-subscribe-btn:hover,
@@ -943,7 +952,65 @@ footer .container {
   fill: #fff;
   margin-left: 16px;
 }
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .footer .container {
+    /*display: flex;*/
+
+    /*TODO remove for tab*/
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    gap: 72px 24px;
+    /*TODO added for tab*/
+    padding-right: 92px;
+    padding-left: 92px;
+  }
+
+  .footer-block {
+    align-items: flex-start;
+  }
+
+
+  .footer-subscribe-form {
+    gap: 24px;
+    flex-direction: row;
+  }
+
+  .footer-email-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer .container {
+    flex-wrap: nowrap;
+    gap: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .footer-block:first-child {
+    margin-right: 120px;
+  }
+
+  .footer-block:last-child {
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
 /*#endregion*/
+
 
 /*TODO*/
 /*#region Modal*/

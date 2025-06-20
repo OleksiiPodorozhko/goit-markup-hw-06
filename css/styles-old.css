@@ -442,7 +442,7 @@ p {
   padding-bottom: 100px;
 }
 
-footer .container {
+.footer .container {
   display: flex;
   align-items: baseline;
 }
@@ -493,11 +493,6 @@ footer .container {
 .footer-social-list {
   display: flex;
   gap: 16px;
-}
-
-.footer-social-item {
-  width: 40px;
-  height: 40px;
 }
 
 .footer-social-link {
